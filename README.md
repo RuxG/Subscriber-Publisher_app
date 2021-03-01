@@ -89,4 +89,17 @@ The publisher sends messages (corelated to different topics) to the server.
 	
 	* The server deconnects all it's clients when it recieves the I/O "exit" command. 
 
+### Notes
+
+	* **Running the code**
+
+		* ./subscriber {id_user} {ip_server} {port_server} 
+		* ./server {port_server}
+		* python3 udp_client.py {ip_server} {port_server}
+		
+	* **Subscriber commands:
+		* subscribe {topic} {SF}  	(SF = store&forward - 0/1 value that enables the feature to store messages while the clients are disconected) 
+		* unsubscribe {topic}
+		* exit
+
 
