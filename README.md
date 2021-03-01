@@ -56,7 +56,7 @@ The publisher sends messages (corelated to different topics) to the server.
 * **Communication with TCP clients**
 
 		
-	* **Connection**
+	1. **Connection**
 			
 		1. The server listens for upcoming connections.
 			
@@ -72,7 +72,7 @@ The publisher sends messages (corelated to different topics) to the server.
 		4. The server sends a message to the client: "ID accepted" (if the connection request was accepted) 
 		/ "ID already in use" (if the connection request was denied).
 
-* The server accepts **3 types of messages** from a TCP client
+	2. The server accepts **3 types of messages** from a TCP client:
 			
 		1. ID message - used in the connection process
 
