@@ -33,7 +33,7 @@ The publisher sends messages (corelated to different topics) to the server.
 ### Server
 
 * The server acts as a **broker between the subscribers and the publisher**. It manages the TCP and UDP connections, recieves messages from the publishers and delivers them to the subscribers. 
-
+store&forward
 * The server supports **two types of communication**: 
 
 	- **simplex** - recieve datagrams from UDP clients
@@ -91,16 +91,16 @@ The publisher sends messages (corelated to different topics) to the server.
 
 ### Notes
 
-	1. **Running the code**
+* Running the code
 
-		1. ./subscriber {id_user} {ip_server} {port_server} 
-		2. ./server {port_server}
-		3. python3 udp_client.py {ip_server} {port_server}
+	1. ./subscriber {id_user} {ip_server} {port_server} 
+	2. ./server {port_server}
+	3. python3 udp_client.py {ip_server} {port_server}
 		
-	2. **Subscriber commands**
+* Subscriber commands
 	
-		1. subscribe {topic} {SF}  	(SF = store&forward - 0/1 value that enables the feature to store messages while the clients are disconected) 
-		2. unsubscribe {topic}
-		3. exit
+	1. subscribe {topic} {SF}  	(SF = store&forward - 0/1 value that enables the feature to store messages while the clients are disconected) 
+	2. unsubscribe {topic}
+	3. exit
 
 
