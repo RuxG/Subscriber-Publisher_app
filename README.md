@@ -12,17 +12,17 @@ This subscriber client can subscribe to different messaging topics and recieve n
 
 	* Accepted I/O commands:
 
-		1) subscribe {topic} {SF}
-		2) unsubscribe {topic}
-		3) exit
+		1. subscribe {topic} {SF}
+		2. unsubscribe {topic}
+		3. exit
 
 	* Interraction with server: 
 		
-		1) The connection process goes as described in server: after the socket connection
+		1. The connection process goes as described in server: after the socket connection
 		is established, the clients sends his ID to the server and awaits confirmation. In 
 		case of request denial, the client terminates the program.
 
-		2) The newsletter messages recieved from server are displayed as recieved, no
+		2. The newsletter messages recieved from server are displayed as recieved, no
 		further parsing is done.
 
 
@@ -74,13 +74,13 @@ The publisher sends messages (corelated to different topics) to the server.
 
 * The server accepts **3 types of messages** from a TCP client:
 			
-		1. ID message -- used in the connection process
+		1. ID message - used in the connection process
 
-		2. subscribe message -- create an entry for the newsletter
+		2. subscribe message - create an entry for the newsletter
 		(if the subscribtion topic does not exit yet) and add the 
 		client as a subscriber
 
-		3. unsubscribe message -- remove the client as a subscriber
+		3. unsubscribe message - remove the client as a subscriber
 		from the newsletter (if the newsletter exists and the client
 		is indeed a subscriber)
 
