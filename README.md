@@ -5,7 +5,7 @@ This project is a small publisher-subscriber application, in which the communica
 
 The **three main parts** of the application are:
 
-###### Subscriber (TCP client)
+##### Subscriber (TCP client)
 This subscriber client can subscribe to different messaging topics and recieve notifications with the messages that are published. 
 
 * The TCP clients support **duplex communication** with the server.
@@ -26,18 +26,18 @@ This subscriber client can subscribe to different messaging topics and recieve n
 		further parsing is done.
 
 
-###### Publisher (UDP client) 
+##### Publisher (UDP client) 
 The publisher sends messages (corelated to different topics) to the server.
 
 
-###### Server
+##### Server
 
 * The server acts as a **broker between the subscribers and the publisher**. It manages the TCP and UDP connections, recieves messages from the publishers and delivers them to the subscribers. 
 
 * The server supports **two types of communication**: 
 
-	-**simplex** - recieve datagrams from UDP clients
-	-**duplex** - send / recieve data to / from TCP clients 
+	- **simplex** - recieve datagrams from UDP clients
+	- **duplex** - send / recieve data to / from TCP clients 
 
 * The server supports **multiple clients**, by using multiplex socket communication.
 
