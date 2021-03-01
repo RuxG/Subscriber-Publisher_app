@@ -91,13 +91,13 @@ The publisher sends messages (corelated to different topics) to the server.
 
 ### Notes
 
-	* Running the code
+	1. **Running the code**
 
 		1. ./subscriber {id_user} {ip_server} {port_server} 
 		2. ./server {port_server}
 		3. python3 udp_client.py {ip_server} {port_server}
 		
-	* Subscriber commands
+	2. **Subscriber commands**
 	
 		1. subscribe {topic} {SF}  	(SF = store&forward - 0/1 value that enables the feature to store messages while the clients are disconected) 
 		2. unsubscribe {topic}
