@@ -58,29 +58,29 @@ The publisher sends messages (corelated to different topics) to the server.
 		
 	* **Connection**
 			
-		1) The server listens for upcoming connections.
+		1. The server listens for upcoming connections.
 			
-		2) The server accepts a socket connection from a client, and
+		2. The server accepts a socket connection from a client, and
 		stores his socket in a map. The server resumes it's activity,
 		following to resume the processing of the connection request 
 		when it recieves an ID from the client on his socket. 
 
-		3) If the recieved ID was not used before, the connection is accepted. 
+		3. If the recieved ID was not used before, the connection is accepted. 
 		If the ID was used before, it accepts the connection request only if 
 		the client is marked as inactive, i.e. is disconnected.
 
-		4) The server sends a message to the client: "ID accepted" (if the connection request was accepted) 
+		4. The server sends a message to the client: "ID accepted" (if the connection request was accepted) 
 		/ "ID already in use" (if the connection request was denied).
 
 * The server accepts **3 types of messages** from a TCP client:
 			
-		1) ID message -- used in the connection process
+		1. ID message -- used in the connection process
 
-		2) subscribe message -- create an entry for the newsletter
+		2. subscribe message -- create an entry for the newsletter
 		(if the subscribtion topic does not exit yet) and add the 
 		client as a subscriber
 
-		3) unsubscribe message -- remove the client as a subscriber
+		3. unsubscribe message -- remove the client as a subscriber
 		from the newsletter (if the newsletter exists and the client
 		is indeed a subscriber)
 
