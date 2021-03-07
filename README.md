@@ -3,19 +3,15 @@
 ## Short description of application
 This project is a small publisher-subscriber application, in which the communication is done via TCP and UDP. 
 
-
-The **three main parts** of the application are:
-
 ### Subscriber (TCP client)
 This subscriber client can subscribe to different messaging topics and recieve notifications with the messages that are published. 
 
-* The TCP clients support **duplex communication** with the server.
+The TCP clients support **duplex communication** with the server.
 
 ### Publisher (UDP client) 
-The publisher sends messages (corelated to different topics) to the server.
+The publishes messages (**UDP datagrams**) to the server.
 
 ### Server
-
 * The server acts as a **broker between the subscribers and the publisher**. It manages the TCP and UDP connections, recieves messages from the publishers and delivers them to the subscribers. 
 
 * The server supports **two types of communication**: 
