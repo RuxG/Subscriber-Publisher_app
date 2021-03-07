@@ -9,7 +9,7 @@ This subscriber client can subscribe to different messaging topics and recieve n
 The TCP clients support **duplex communication** with the server.
 
 ### Publisher (UDP client) 
-The publishes messages (**UDP datagrams**) to the server.
+The udp clients send messages (**UDP datagrams**) to the server, under different topics. 
 
 ### Server
 * The server acts as a **broker between the subscribers and the publisher**. It manages the TCP and UDP connections, recieves messages from the publishers and delivers them to the subscribers. 
